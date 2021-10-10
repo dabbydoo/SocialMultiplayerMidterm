@@ -8,6 +8,7 @@ public class CoinPickup : MonoBehaviour
     {
         if (col.gameObject.tag == "Coin")
         {
+            gameObject.GetComponent<CoinCounter>().coins++;
             Destroy(col.gameObject);
         }
     }
